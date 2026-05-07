@@ -26,26 +26,63 @@
         </p>
     </div>
 
-    <!-- PORTFOLIO -->
-    <div id="portfolioPage">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
 
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
 
-                <a class="navbar-brand" href="#">My Portfolio</a>
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- Mobile Toggle -->
-                <button class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse d-none d-lg-flex">
+                <ul class="navbar-nav ms-auto">
 
-                <!-- Desktop Menu -->
-                <div class="collapse navbar-collapse d-none d-lg-flex">
-                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- MOBILE MENU -->
+            <div class="offcanvas offcanvas-end d-lg-none"
+                 tabindex="-1"
+                 id="offcanvasNavbar">
+
+                <div class="offcanvas-header">
+
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="offcanvas">
+                    </button>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav">
 
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
@@ -68,52 +105,15 @@
                         </li>
 
                     </ul>
+
                 </div>
-
-                <!-- MOBILE MENU -->
-                <div class="offcanvas offcanvas-end d-lg-none"
-                     tabindex="-1"
-                     id="offcanvasNavbar">
-
-                    <div class="offcanvas-header">
-
-                        <button type="button"
-                                class="btn-close btn-close-white"
-                                data-bs-dismiss="offcanvas">
-                        </button>
-                    </div>
-
-                    <div class="offcanvas-body">
-
-                        <ul class="navbar-nav">
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#home">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">Projects</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skills">Skills</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </div>
-
             </div>
-        </nav>
+
+        </div>
+    </nav>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolioPage">
 
         <!-- HERO -->
         <section class="hero" id="home">
