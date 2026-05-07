@@ -11,15 +11,19 @@ html,body{
     color:white;
 }
 
-/* Particles canvas sits behind the page content */
+/* Particles canvas sits inside the hero and behind its content */
+.hero{ position:relative; }
 #particles{
-    position:fixed;
+    position:absolute;
     inset:0;
     width:100%;
     height:100%;
-    z-index:-1;
+    z-index:0;
     pointer-events:none;
 }
+
+/* ensure hero content sits above the canvas */
+.hero > .container{ position:relative; z-index:1; }
 
 /* WELCOME PAGE */
 

@@ -6,9 +6,12 @@
     let width = 0, height = 0, particles = [], animationId = null;
 
     function resize(){
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
-        // choose particle count based on width for responsiveness
+        // size canvas to its layout size (works when canvas is inside hero)
+        const rect = canvas.getBoundingClientRect();
+        width = canvas.width = Math.max(1, Math.round(rect.width));
+        height = canvas.height = Math.max(1, Math.round(rect.height));
+
+        // choose particle count based on canvas width for responsiveness
         let count = 120;
         if(width < 480) count = 30;
         else if(width < 768) count = 60;
