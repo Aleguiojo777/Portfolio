@@ -76,7 +76,6 @@
                      id="offcanvasNavbar">
 
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title">BytePhantom</h5>
 
                         <button type="button"
                                 class="btn-close btn-close-white"
@@ -159,7 +158,7 @@
 
                         <div class="about-inner">
                             <p>
-                            Motivated Information Technology graduate seeking any IT Related position. 
+                            Motivated Information Technology graduate seeking any IT-Related position. 
                             Knowledgeable in troubleshooting, system maintenance, hardware and software support, technical problem-solving, . 
                             Willing to learn and contribute effectively in a professional IT environment.
                     
@@ -353,12 +352,14 @@
 
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS - load first for interactive components like offcanvas -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
 
-    <!-- JS -->
+    <!-- Particles canvas animation -->
     <script src="js/particles.js" defer></script>
-    <script src="js/script.js"></script>
+
+    <!-- Custom site script -->
+    <script src="js/script.js" defer></script>
 
 </body>
 </html>

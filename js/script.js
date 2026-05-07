@@ -9,6 +9,7 @@ function enterPortfolio(){
     setTimeout(() => {
 
         welcome.style.display = 'none';
+        welcome.classList.add('hidden');
 
         portfolio.classList.add('entered');
 
@@ -54,4 +55,17 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     },3000);
 
+    // Close offcanvas menu when a nav link is clicked
+    const navLinks = document.querySelectorAll('.offcanvas .nav-link');
+    const offcanvasElement = document.getElementById('offcanvasNavbar');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Use Bootstrap's offcanvas API to hide
+            if (offcanvasElement && window.bootstrap) {
+                const bsOffcanvas = new window.bootstrap.Offcanvas(offcanvasElement);
+                bsOffcanvas.hide();
+            }
+        });
+    });
 });

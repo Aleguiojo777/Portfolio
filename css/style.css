@@ -5,10 +5,14 @@
     font-family:Arial,sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 html,body{
-    overflow-x:hidden;
     background:#0f172a;
     color:white;
+    overflow-x:hidden;
 }
 
 /* Particles canvas sits inside the hero and behind its content */
@@ -51,6 +55,12 @@ html,body{
     animation:gradientShift 10s ease infinite;
 
     transition:1s;
+    pointer-events:all;
+}
+
+/* after welcome fades out, remove its ability to block clicks */
+#welcomePage.hidden{
+    pointer-events:none;
 }
 
 .welcome-title{
@@ -150,18 +160,58 @@ html,body{
     backdrop-filter:blur(6px);
     border-bottom:1px solid rgba(56,189,248,0.06);
     box-shadow:0 6px 18px rgba(2,6,23,0.45);
-    z-index:10010 !important;
+    z-index:10100 !important;
     position:fixed;
     top:0;
     left:0;
     right:0;
+    pointer-events:auto;
 }
 
 .offcanvas{
     background:linear-gradient(180deg, rgba(6,17,37,0.98), rgba(10,24,40,0.98));
-    width:260px !important;
+    width:280px !important;
+    height:auto !important;
     border-left:1px solid rgba(56,189,248,0.04);
-    z-index:10011 !important;
+    border-top:none;
+    z-index:10101 !important;
+    pointer-events:auto;
+    display:none;
+    position:fixed;
+    top:60px;
+    right:0;
+    left:auto;
+    bottom:auto;
+}
+
+/* Show offcanvas when Bootstrap adds the 'show' class */
+.offcanvas.show{
+    display:flex !important;
+    flex-direction:column;
+    visibility:visible !important;
+}
+
+.offcanvas-body{
+    display:flex;
+    flex-direction:column;
+    padding:0;
+    width:100%;
+}
+
+.offcanvas .navbar-nav{
+    flex-direction:column;
+    width:100%;
+}
+
+/* Desktop navbar menu */
+.navbar-collapse{
+    display:flex;
+}
+
+.navbar-nav{
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
 }
 
 /* Brand + links styling to match neon tech theme */
@@ -211,16 +261,77 @@ html,body{
 /* Toggler styling */
 .navbar-toggler{
     border:1px solid rgba(255,255,255,0.06);
+    pointer-events:auto;
+    z-index:10102 !important;
+    position:relative;
+}
+
+/* make the hamburger clearly visible (cyan) on all backgrounds */
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='%2338bdf8' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+    filter: drop-shadow(0 0 6px rgba(56,189,248,0.15));
+    display:block !important;
+    width:1.5em !important;
+    height:1.5em !important;
+    background-repeat:no-repeat !important;
+    background-position:center !important;
+    background-size:100% !important;
 }
 
 /* Offcanvas nav links larger and spaced for touch */
+.offcanvas .nav-item{
+    width:100%;
+}
+
 .offcanvas .nav-link{
-    font-size:1.1rem;
-    padding:.8rem 1rem;
-    color:rgba(255,255,255,0.95);
+    font-size:1rem;
+    padding:0.9rem 1.5rem;
+    color:#e6f7ff;
+    border-bottom:1px solid rgba(56,189,248,0.1);
+    transition:all .2s ease;
+    display:block;
+    width:100%;
+    text-align:left;
+}
+.offcanvas .nav-link:last-child{
+    border-bottom:none;
 }
 .offcanvas .nav-link:hover{
     color:#38bdf8;
+    background:rgba(56,189,248,0.08);
+    padding-left:2rem;
+}
+
+/* make offcanvas title and close button more visible */
+.offcanvas-header{
+    border-bottom:1px solid rgba(56,189,248,0.08);
+}
+
+.offcanvas-title{
+    color:#7dd3fc;
+    font-weight:700;
+    letter-spacing:0.5px;
+}
+
+/* Ensure offcanvas content is scrollable */
+.offcanvas-body{
+    overflow-y:auto;
+}
+
+/* When offcanvas is shown, ensure body doesn't clip content */
+body.offcanvas-open{
+    overflow:visible !important;
+}
+
+/* Ensure modal backdrop appears when offcanvas is shown */
+.offcanvas-backdrop{
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:10100 !important;
+    background-color:rgba(0,0,0,0.5);
+    pointer-events:auto;
 }
 
 /* HERO */
