@@ -145,12 +145,82 @@ html,body{
 /* NAVBAR */
 
 .navbar{
-    background:#0f172a;
+    background:rgba(6,17,37,0.56);
+    -webkit-backdrop-filter:blur(6px);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid rgba(56,189,248,0.06);
+    box-shadow:0 6px 18px rgba(2,6,23,0.45);
+    z-index:10010 !important;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
 }
 
 .offcanvas{
-    background:#0f172a;
+    background:linear-gradient(180deg, rgba(6,17,37,0.98), rgba(10,24,40,0.98));
     width:260px !important;
+    border-left:1px solid rgba(56,189,248,0.04);
+    z-index:10011 !important;
+}
+
+/* Brand + links styling to match neon tech theme */
+.navbar-brand{
+    font-weight:700;
+    letter-spacing:1px;
+    color:#7dd3fc !important;
+    text-shadow:0 0 8px rgba(125,211,252,0.16), 0 0 20px rgba(56,189,248,0.08);
+}
+
+.navbar .nav-link{
+    color:rgba(255,255,255,0.9);
+    padding:.5rem .9rem;
+    position:relative;
+    transition:color .18s ease, text-shadow .18s ease;
+}
+
+.navbar .nav-link::after{
+    content:'';
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:6px;
+    width:0;
+    height:2px;
+    background:linear-gradient(90deg,#7dd3fc,#38bdf8);
+    border-radius:2px;
+    transition:width .24s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus{
+    color:#38bdf8;
+    text-shadow:0 0 8px rgba(56,189,248,0.18);
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link:focus::after{
+    width:60%;
+}
+
+/* Highlight active nav link */
+.navbar .nav-link.active{
+    color:#7dd3fc;
+}
+
+/* Toggler styling */
+.navbar-toggler{
+    border:1px solid rgba(255,255,255,0.06);
+}
+
+/* Offcanvas nav links larger and spaced for touch */
+.offcanvas .nav-link{
+    font-size:1.1rem;
+    padding:.8rem 1rem;
+    color:rgba(255,255,255,0.95);
+}
+.offcanvas .nav-link:hover{
+    color:#38bdf8;
 }
 
 /* HERO */
