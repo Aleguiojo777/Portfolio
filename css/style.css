@@ -149,7 +149,6 @@ html,body{
 
 #portfolioPage{
     display:block;
-    padding-top:76px;
 
     opacity:0;
     transform:translateY(20px);
@@ -180,20 +179,17 @@ html,body{
     max-width:100% !important;
     pointer-events:auto;
     visibility:visible !important;
-    display:block !important;
+    display:none !important;
     opacity:1 !important;
     transform:none !important;
     margin:0 !important;
     padding:0 !important;
+    transition: display 0.3s ease;
 }
 
-.navbar-expand-lg {
-    flex-wrap:nowrap !important;
-}
-
-.navbar .container {
-    z-index:10101 !important;
-    position:relative !important;
+/* Show navbar after welcome page */
+.navbar.show {
+    display:block !important;
 }
 
 .offcanvas{

@@ -4,6 +4,8 @@ function enterPortfolio(){
 
     const portfolio = document.getElementById('portfolioPage');
 
+    const navbar = document.querySelector('.navbar');
+
     welcome.style.opacity = '0';
 
     setTimeout(() => {
@@ -12,6 +14,11 @@ function enterPortfolio(){
         welcome.classList.add('hidden');
 
         portfolio.classList.add('entered');
+
+        // Show navbar after welcome fades
+        if (navbar) {
+            navbar.classList.add('show');
+        }
 
     },1000);
 }
