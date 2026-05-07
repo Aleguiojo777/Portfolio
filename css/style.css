@@ -404,7 +404,7 @@ section.in-view{
 /* FOOTER */
 
 footer{
-    background-image: linear-gradient(180deg,#020617 0%, #000510 100%),
+    background-image: linear-gradient(180deg,#020617 0%, #000510 100%);
     text-align:center;
     padding:20px;
 }
