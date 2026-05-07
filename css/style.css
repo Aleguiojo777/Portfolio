@@ -253,15 +253,26 @@ section.in-view{
         color:#e6f7ff;
     }
 
-    #about p{
-        max-width:900px;
-        margin:0 auto;
-        background:rgba(255,255,255,0.02);
-        padding:22px;
-        border-radius:12px;
-        line-height:1.8;
-        text-align:justify;
-        text-justify:inter-word;
+    /* center the about block vertically and horizontally */
+    #about .about-inner{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:48vh;
+        padding:20px 0;
+    }
+
+    /* centered statement that preserves the site's font */
+    #about .about-inner p{
+        font-size:1.25rem;
+        line-height:1.9;
+        text-align:center;
+        color:#e6f7ff;
+        max-width:760px;
+        margin:0;
+        background:transparent;
+        padding:0;
+        letter-spacing:0.2px;
     }
 
     #about .section-title h2{
