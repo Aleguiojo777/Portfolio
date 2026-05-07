@@ -135,6 +135,16 @@ html,body{
     }
 }
 
+/* Profile picture floating animation */
+@keyframes floatProfile {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 /* PORTFOLIO */
 
 #portfolioPage{
@@ -374,6 +384,26 @@ body.offcanvas-open{
     object-fit:cover;
 
     border:5px solid #f59e0b;
+    
+    /* Floating animation */
+    animation: floatProfile 3s ease-in-out infinite;
+    
+    /* Glowing effect */
+    box-shadow: 
+        0 0 30px rgba(245, 158, 11, 0.6),
+        0 0 60px rgba(245, 158, 11, 0.3),
+        inset 0 0 30px rgba(245, 158, 11, 0.1);
+    
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.08) rotateZ(3deg);
+    box-shadow: 
+        0 0 40px rgba(245, 158, 11, 0.8),
+        0 0 80px rgba(56, 189, 248, 0.5),
+        0 20px 50px rgba(245, 158, 11, 0.4),
+        inset 0 0 30px rgba(245, 158, 11, 0.2);
 }
 
 
