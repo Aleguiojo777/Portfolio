@@ -16,9 +16,11 @@
       {
         "ignore": [
           "text-justify",
-          "text-justify: inter-word"
+          "text-justify: inter-word",
+          "backdrop-filter"
         ]
       }
-    ]
+    ],
+    "disown-opener": "off"
   }
 }

@@ -1,365 +1,700 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>BytePhantom Portfolio</title>
 
-    <!-- Bootstrap (local fallback) -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet">
 
-    <!-- Bootstrap Icons (local fallback) -->
-    <link rel="stylesheet" href="vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="vendor/bootstrap-icons/font/bootstrap-icons.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="Pictures/favicon.svg" type="image/svg+xml">
+    <!-- Custom CSS -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
 </head>
+
 <body>
 
-    <!-- WELCOME PAGE -->
+    <!-- WELCOME SCREEN -->
+
     <div id="welcomePage">
-        <h1 class="welcome-title">Welcome</h1>
+
+        <h1 class="welcome-title">
+            Welcome
+        </h1>
+
         <p class="welcome-subtitle">
-            <span class="typing">Entering Digital World</span>
-            <span class="cursor">|</span>
+
+            <span class="typing">
+                Entering Digital World
+            </span>
+
         </p>
+
     </div>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
         <div class="container">
 
-            <a class="navbar-brand" href="#">My Portfolio</a>
+            <!-- LOGO -->
 
-            <!-- Mobile Toggle -->
+            <a class="navbar-brand"
+               href="#">
+
+               BytePhantom
+
+            </a>
+
+            <!-- HAMBURGER -->
+
             <button class="navbar-toggler d-lg-none"
                     type="button"
                     data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar">
+                    data-bs-target="#mobileMenu">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
 
-            <!-- Desktop Menu -->
+            <!-- DESKTOP MENU -->
+
             <div class="collapse navbar-collapse d-none d-lg-flex">
+
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home">
+                            Home
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#education">
+                            Education
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#projects">
+                            Projects
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#experience">
+                            Experience
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
                     </li>
 
                 </ul>
-            </div>
 
-            <!-- MOBILE MENU -->
-            <div class="offcanvas offcanvas-end d-lg-none"
-                 tabindex="-1"
-                 id="offcanvasNavbar">
-
-                <div class="offcanvas-header">
-
-                    <button type="button"
-                            class="btn-close btn-close-white"
-                            data-bs-dismiss="offcanvas">
-                    </button>
-                </div>
-
-                <div class="offcanvas-body">
-
-                    <ul class="navbar-nav">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-
-                    </ul>
-
-                </div>
             </div>
 
         </div>
+
     </nav>
 
-    <!-- PORTFOLIO -->
-    <div id="portfolioPage">
+    <!-- MOBILE MENU -->
 
-        <!-- HERO -->
-        <section class="hero" id="home">
+    <div class="offcanvas offcanvas-end d-lg-none"
+         tabindex="-1"
+         id="mobileMenu">
 
-            <canvas id="particles" aria-hidden="true"></canvas>
+        <div class="offcanvas-header">
 
-            <div class="container">
+            <h5 class="offcanvas-title">
+                Menu
+            </h5>
 
-                <div class="row align-items-center">
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas">
+            </button>
 
-                    <div class="col-lg-6">
-                        <h1>Hello, I'm <span>Aljey Aleguiojo</span></h1>
+        </div>
 
-                        <p>
-                            I am an aspiring Web Developer,
-                            IT Support, and Data Analyst.
-                        </p>
+        <div class="offcanvas-body">
 
-                        
-                    </div>
+            <ul class="navbar-nav">
 
-                    <div class="col-lg-6 text-center">
-                        <img src="Pictures/Aljey.jpg"
-                             alt="Profile Picture"
-                             class="img-fluid">
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ABOUT -->
-        <section id="about">
-
-            <div class="container">
-
-                        <div class="section-title">
-                            <h2>About Me</h2>
-                        </div>
-
-                        <div class="about-inner">
-                            <p>
-                            Motivated Information Technology graduate seeking any IT-Related position. 
-                            Knowledgeable in troubleshooting, system maintenance, hardware and software support, technical problem-solving, . 
-                            Willing to learn and contribute effectively in a professional IT environment.
-                    
-                    
-                            </p>
-                        </div>
-
-            </div>
-
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects">
-
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Projects</h2>
-                </div>
-
-                <div class="row g-4">
-
-                    <div class="col-md-4">
-
-                        <a class="project-link" href="https://github.com/Aleguiojo777/Teacher-Portal" aria-label="Open Portfolio Website" target="_blank" rel="noopener noreferrer">
-
-                            <div class="card card-custom p-4 text-center">
-
-                                <i class="bi bi-code-slash"></i>
-
-                                <h4>Teacher Portal</h4>
-
-                                <p>
-                                    Attendance Monitoring System.
-                                </p>
-
-                            </div>
-
-                        </a>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <a class="project-link" href="https://github.com/Aleguiojo777/ExpressInPOS" aria-label="Open POS System" target="_blank" rel="noopener noreferrer">
-
-                            <div class="card card-custom p-4 text-center">
-
-                                <i class="bi bi-database"></i>
-
-                                <h4>POS System</h4>
-
-                                <p>
-                                    Inventory and Sales System.
-                                </p>
-
-                            </div>
-
-                        </a>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <a class="project-link" href="https://drive.google.com/file/d/1sbKZv26TtFIMHItPl49XPMpcFQyesxbL/view?usp=drive_link" aria-label="Open Analytics Dashboard" target="_blank" rel="noopener noreferrer">
-
-                            <div class="card card-custom p-4 text-center">
-
-                                <i class="bi bi-graph-up-arrow"></i>
-
-                                <h4>Analytics Dashboard</h4>
-
-                                <p>
-                                    Data visualization project.
-                                </p>
-
-                            </div>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- EXPERTISE -->
-        <section id="skills" class="skills">
-
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Skills</h2>
-                </div>
-
-                <div class="row g-4">
-
-                    <div class="col-md-4">
-
-                        <div class="card card-custom p-4 text-center">
-
-                            <i class="bi bi-window-stack" style="font-size:2rem"></i>
-
-                            <h4>Web Development</h4>
-
-                            <p>
-                                HTML, CSS, JavaScript, Bootstrap, responsive design.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="card card-custom p-4 text-center">
-
-                            <i class="bi bi-tools" style="font-size:2rem"></i>
-
-                            <h4>IT Support</h4>
-
-                            <p>
-                                Troubleshooting, system administration, networking basics.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="card card-custom p-4 text-center">
-
-                            <i class="bi bi-bar-chart-line" style="font-size:2rem"></i>
-
-                            <h4>Data Analytics</h4>
-
-                            <p>
-                                knowledgeable in data analysis, visualization, SQL, and Excel.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact">
-
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Contact Me</h2>
-                </div>
-
-                <div class="social-icons d-flex justify-content-center gap-4">
-
-                    <a href="https://web.facebook.com/aljey.aleguiojo.2025" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">
+                        Home
                     </a>
+                </li>
 
-                    <a href="https://www.instagram.com/bytephantomjey/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        About
                     </a>
+                </li>
 
-                    <a href="https://www.linkedin.com/in/aljey-aleguiojo-6ab71b293/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">
+                        Education
                     </a>
+                </li>
 
-                    <a href="https://github.com/Aleguiojo777" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="bi bi-github"></i>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">
+                        Projects
                     </a>
+                </li>
 
-                </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">
+                        Experience
+                    </a>
+                </li>
 
-            </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">
+                        Skills
+                    </a>
+                </li>
 
-        </section>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
+                </li>
 
-        <!-- FOOTER -->
-        <footer>
-            <p>© 2026 Aljey Aleguiojo Portfolio</p>
-        </footer>
+            </ul>
+
+        </div>
 
     </div>
 
-    <!-- Bootstrap JS - load first for interactive components like offcanvas -->
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <!-- HERO -->
 
-    <!-- Particles canvas animation -->
-    <script src="js/particles.js" defer></script>
+    <section class="hero"
+             id="home">
 
-    <!-- Custom site script -->
-    <script src="js/script.js" defer></script>
+        <canvas id="particles"></canvas>
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h1>
+                        Hello, I'm
+                        <span>Aljey Aleguiojo</span>
+                    </h1>
+
+                    <p>
+                        Bachelor of Science in Information Technology graduate
+                        passionate about Web Development,
+                        IT Support,
+                        System Analysis,
+                        and Data Analytics.
+                    </p>
+
+                    <div class="hero-buttons mt-4">
+
+                        <a href="#contact"
+                           class="btn btn-warning me-3">
+
+                           Contact Me
+
+                        </a>
+
+                        <button class="btn btn-outline-light"
+                                onclick="forceDownload()">
+
+                                 Download Resume
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <img src="Pictures/Aljey.jpg"
+                         alt="Profile Picture"
+                         class="img-fluid profile-img">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+  <!-- ABOUT -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>About Me</h2>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-10">
+
+                <div class="about-card">
+
+                    <h3 class="about-heading">
+                        Aspiring IT Professional
+                    </h3>
+
+                    <p class="about-text">
+
+                        I am a motivated Bachelor of Science in Information Technology graduate seeking opportunities in Web Development, IT Support, System Analysis, and Data Analytics. I have hands-on experience in troubleshooting, technical support, SQL, C# programming, responsive web development, and system maintenance.
+
+                    </p>
+
+                    <p class="about-text">
+
+                        I am passionate about building efficient systems, solving technical problems, and continuously learning modern technologies. I am eager to apply my technical skills, grow professionally, and contribute effectively in a dynamic IT environment.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Education</h2>
+
+            </div>
+
+            <div class="card card-custom p-4 text-center">
+
+                <i class="bi bi-mortarboard-fill"></i>
+
+                <h4>
+                    Bachelor of Science in Information Technology
+                </h4>
+
+                <p>
+                    Asian College of Technology
+                </p>
+
+                <p>
+                    Cebu City, Philippines
+                </p>
+
+                <p>
+                    2025 - 2026
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+   <section id="projects">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Projects</h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- PROJECT 1 -->
+
+            <div class="col-md-4">
+
+                <a class="project-link"
+                   href="https://github.com/Aleguiojo777/Teacher-Portal"
+                   target="_blank">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="bi bi-code-slash"></i>
+
+                        </div>
+
+                        <h4>Teacher Portal</h4>
+
+                        <p>
+                            Attendance Monitoring System
+                        </p>
+
+                        <div class="project-footer">
+
+                            <span>View Project</span>
+
+                            <i class="bi bi-arrow-right-circle-fill"></i>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <!-- PROJECT 2 -->
+
+            <div class="col-md-4">
+
+                <a class="project-link"
+                   href="https://github.com/Aleguiojo777/ExpressInPOS"
+                   target="_blank">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="bi bi-database"></i>
+
+                        </div>
+
+                        <h4>POS System</h4>
+
+                        <p>
+                            Inventory and Sales System
+                        </p>
+
+                        <div class="project-footer">
+
+                            <span>View Project</span>
+
+                            <i class="bi bi-arrow-right-circle-fill"></i>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <!-- PROJECT 3 -->
+
+            <div class="col-md-4">
+
+                <a class="project-link"
+                   href="https://drive.google.com/file/d/1sbKZv26TtFIMHItPl49XPMpcFQyesxbL/view?usp=drive_link"
+                   target="_blank">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="bi bi-graph-up-arrow"></i>
+
+                        </div>
+
+                        <h4>Analytics Dashboard</h4>
+
+                        <p>
+                            Data Visualization Project
+                        </p>
+
+                        <div class="project-footer">
+
+                            <span>View Project</span>
+
+                            <i class="bi bi-arrow-right-circle-fill"></i>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Experience</h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+
+                    <div class="card card-custom p-4">
+
+                        <i class="bi bi-building"></i>
+
+                        <h4>
+                            Mezzo Hotel IT Department
+                        </h4>
+
+                        <p>
+                            On-The-Job Trainee I
+                        </p>
+
+                        <p>
+                            January 2025 – April 2025
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="card card-custom p-4">
+
+                        <i class="bi bi-pc-display"></i>
+
+                        <h4>
+                            Express Inn
+                        </h4>
+
+                        <p>
+                            On-The-Job Trainee II
+                        </p>
+
+                        <p>
+                            December 2025 – March 2026
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Skills</h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="card card-custom p-4 text-center">
+
+                        <i class="bi bi-window-stack"></i>
+
+                        <h4>
+                            Web Development
+                        </h4>
+
+                        <p>
+                            HTML, CSS, JavaScript,
+                            Bootstrap
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card card-custom p-4 text-center">
+
+                        <i class="bi bi-tools"></i>
+
+                        <h4>
+                            IT Support
+                        </h4>
+
+                        <p>
+                            Troubleshooting,
+                            Networking,
+                            System Maintenance
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card card-custom p-4 text-center">
+
+                        <i class="bi bi-bar-chart-line"></i>
+
+                        <h4>
+                            Data Analytics
+                        </h4>
+
+                        <p>
+                            SQL,
+                            Excel,
+                            Data Visualization
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Contact Me</h2>
+
+            </div>
+
+            <div class="social-icons d-flex justify-content-center gap-4">
+
+                <a href="https://facebook.com"
+                   class="social-link">
+
+                    <i class="bi bi-facebook"></i>
+
+                </a>
+
+                <a href="https://instagram.com"
+                   class="social-link">
+
+                    <i class="bi bi-instagram"></i>
+
+                </a>
+
+                <a href="https://linkedin.com"
+                   class="social-link">
+
+                    <i class="bi bi-linkedin"></i>
+
+                </a>
+
+                <a href="https://github.com"
+                   class="social-link">
+
+                    <i class="bi bi-github"></i>
+
+                </a>
+
+            </div>
+
+            <div class="contact-details text-center mt-4">
+
+                <p>
+                    <i class="bi bi-envelope-fill"></i>
+                    aleguiojoaljey@gmail.com
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone-fill"></i>
+                    09536986570
+                </p>
+
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Cebu City, Philippines
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Aljey Aleguiojo Portfolio
+        </p>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/particles.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
