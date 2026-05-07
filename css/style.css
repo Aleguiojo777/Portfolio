@@ -65,7 +65,7 @@ html,body{
 
 .welcome-title{
     font-size:4rem;
-    color:#bfe9ff;
+    color:#fde68a;
 
     text-transform:uppercase;
     letter-spacing:2px;
@@ -84,7 +84,7 @@ html,body{
 
     display:inline-block;
 
-    border-right:3px solid #38bdf8;
+    border-right:3px solid #f59e0b;
 
     width:0;
 
@@ -111,13 +111,13 @@ html,body{
 
 @keyframes neon{
     from{
-        text-shadow:0 0 10px #38bdf8;
+        text-shadow:0 0 10px #f59e0b;
     }
 
     to{
         text-shadow:
-        0 0 20px #38bdf8,
-        0 0 40px #38bdf8;
+        0 0 20px #f59e0b,
+        0 0 40px #f59e0b;
     }
 }
 
@@ -158,7 +158,7 @@ html,body{
     background:rgba(6,17,37,0.56);
     -webkit-backdrop-filter:blur(6px);
     backdrop-filter:blur(6px);
-    border-bottom:1px solid rgba(56,189,248,0.06);
+    border-bottom:1px solid rgba(245,158,11,0.06);
     box-shadow:0 6px 18px rgba(2,6,23,0.45);
     z-index:10100 !important;
     position:fixed;
@@ -218,8 +218,8 @@ html,body{
 .navbar-brand{
     font-weight:700;
     letter-spacing:1px;
-    color:#7dd3fc !important;
-    text-shadow:0 0 8px rgba(125,211,252,0.16), 0 0 20px rgba(56,189,248,0.08);
+    color:#fbbf24 !important;
+    text-shadow:0 0 8px rgba(251,191,36,0.16), 0 0 20px rgba(245,158,11,0.08);
 }
 
 .navbar .nav-link{
@@ -237,15 +237,15 @@ html,body{
     bottom:6px;
     width:0;
     height:2px;
-    background:linear-gradient(90deg,#7dd3fc,#38bdf8);
+    background:linear-gradient(90deg,#fbbf24,#f59e0b);
     border-radius:2px;
     transition:width .24s ease;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus{
-    color:#38bdf8;
-    text-shadow:0 0 8px rgba(56,189,248,0.18);
+    color:#f59e0b;
+    text-shadow:0 0 8px rgba(245,158,11,0.18);
 }
 
 .navbar .nav-link:hover::after,
@@ -255,7 +255,7 @@ html,body{
 
 /* Highlight active nav link */
 .navbar .nav-link.active{
-    color:#7dd3fc;
+    color:#fbbf24;
 }
 
 /* Toggler styling */
@@ -268,8 +268,8 @@ html,body{
 
 /* make the hamburger clearly visible (cyan) on all backgrounds */
 .navbar-toggler-icon{
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='%2338bdf8' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
-    filter: drop-shadow(0 0 6px rgba(56,189,248,0.15));
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='%23f59e0b' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+    filter: drop-shadow(0 0 6px rgba(245,158,11,0.15));
     display:block !important;
     width:1.5em !important;
     height:1.5em !important;
@@ -287,7 +287,7 @@ html,body{
     font-size:1rem;
     padding:0.9rem 1.5rem;
     color:#e6f7ff;
-    border-bottom:1px solid rgba(56,189,248,0.1);
+    border-bottom:1px solid rgba(245,158,11,0.1);
     transition:all .2s ease;
     display:block;
     width:100%;
@@ -297,18 +297,18 @@ html,body{
     border-bottom:none;
 }
 .offcanvas .nav-link:hover{
-    color:#38bdf8;
-    background:rgba(56,189,248,0.08);
+    color:#f59e0b;
+    background:rgba(245,158,11,0.08);
     padding-left:2rem;
 }
 
 /* make offcanvas title and close button more visible */
 .offcanvas-header{
-    border-bottom:1px solid rgba(56,189,248,0.08);
+    border-bottom:1px solid rgba(245,158,11,0.08);
 }
 
 .offcanvas-title{
-    color:#7dd3fc;
+    color:#fbbf24;
     font-weight:700;
     letter-spacing:0.5px;
 }
@@ -345,7 +345,7 @@ body.offcanvas-open{
     /* layered gradient + subtle stripe texture for a tech feel */
     /* inline SVG circuit texture on top, then soft radial + gradients + stripes */
     --circuit-svg: url('../Pictures/circuit-pattern.svg');
-    background-image: var(--circuit-svg), radial-gradient(circle at 15% 10%, rgba(56,189,248,0.04), transparent 20%),
+    background-image: var(--circuit-svg), radial-gradient(circle at 15% 10%, rgba(245,158,11,0.04), transparent 20%),
         linear-gradient(180deg,#0b1220 0%, #1e293b 60%),
         repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 24px);
 
@@ -357,7 +357,7 @@ body.offcanvas-open{
 }
 
 .hero span{
-    color:#38bdf8;
+    color:#f59e0b;
 }
 
 .hero p{
@@ -367,13 +367,13 @@ body.offcanvas-open{
 
 .hero img{
     width:100%;
-    max-width:350px;
+    max-width:450px;
     aspect-ratio:1/1;
 
     border-radius:50%;
     object-fit:cover;
 
-    border:5px solid #38bdf8;
+    border:5px solid #f59e0b;
 }
 
 
@@ -399,7 +399,7 @@ section.in-view{
 }
 
 .section-title h2{
-    color:#38bdf8;
+    color:#f59e0b;
 }
 
 /* CARDS */
@@ -413,7 +413,7 @@ section.in-view{
 
 .card-custom i{
     font-size:3rem;
-    color:#38bdf8;
+    color:#f59e0b;
 }
 
 /* Make project cards fully clickable */
@@ -424,15 +424,17 @@ section.in-view{
 }
 
 .project-link .card-custom{
-    transition:transform .28s ease, box-shadow .28s ease;
+    transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease;
     will-change:transform;
     cursor:pointer;
+    border:2px solid rgba(56,189,248,0.2);
 }
 
 .project-link:hover .card-custom,
 .project-link:focus .card-custom{
     transform:translateY(-8px);
-    box-shadow:0 18px 40px rgba(2,6,23,0.6);
+    box-shadow:0 18px 40px rgba(56,189,248,0.4);
+    border-color:rgba(56,189,248,0.8);
 }
 
 /* SKILLS */
@@ -442,7 +444,7 @@ section.in-view{
 }
 
 .skills .progress-bar{
-    background:#38bdf8;
+    background:#f59e0b;
 }
 
     /* SECTION-SPECIFIC STYLES */
@@ -478,7 +480,7 @@ section.in-view{
     }
 
     #about .section-title h2{
-        color:#7dd3fc;
+        color:#fbbf24;
     }
 
     /* PROJECTS: darker, warm accents */
@@ -511,15 +513,21 @@ section.in-view{
 
     .skills .card-custom{
         background:rgba(255,255,255,0.03);
-        border:1px solid rgba(255,255,255,0.04);
+        border:1px solid rgba(56,189,248,0.3);
+        transition:border-color .3s ease, box-shadow .3s ease;
+    }
+    
+    .skills .card-custom:hover{
+        border-color:rgba(56,189,248,0.8);
+        box-shadow:0 0 20px rgba(56,189,248,0.3);
     }
 
     .skills .card-custom i{
-        color:#60a5fa;
+        color:#f59e0b;
     }
 
     .skills .section-title h2{
-        color:#60a5fa;
+        color:#f59e0b;
     }
 
     /* CONTACT: minimal, purple accent */
@@ -531,25 +539,27 @@ section.in-view{
     }
 
     #contact .social-link{
-        color:#a78bfa;
-        transition:transform .3s,color .3s;
+        color:#f59e0b;
+        transition:transform .3s,color .3s,text-shadow .3s;
     }
 
     #contact .social-link:hover{
-        color:#60a5fa;
+        color:#38bdf8;
         transform:scale(1.1) translateY(-4px);
+        text-shadow:0 0 12px rgba(56,189,248,0.6);
     }
 
     #contact .section-title h2{
-        color:#a78bfa;
+        color:#f59e0b;
     }
+
 
 /* Neon accents used across the site */
 .neon{
-    color:#38bdf8;
+    color:#f59e0b;
     text-shadow:
-        0 0 6px rgba(56,189,248,0.9),
-        0 0 18px rgba(56,189,248,0.45);
+        0 0 6px rgba(245,158,11,0.9),
+        0 0 18px rgba(245,158,11,0.45);
 }
 
 /* animated underline for section headings */
@@ -564,7 +574,7 @@ section.in-view{
     bottom:-14px;
     width:60px;
     height:3px;
-    background:linear-gradient(90deg,#7dd3fc,#38bdf8);
+    background:linear-gradient(90deg,#fbbf24,#f59e0b);
     border-radius:2px;
     opacity:0.9;
     transition:width .45s ease;
@@ -577,13 +587,15 @@ section.in-view{
 
 .social-link{
     font-size:2rem;
-    color:#38bdf8;
+    color:#f59e0b;
 
     transition:.3s;
 }
 
 .social-link:hover{
     transform:translateY(-5px);
+    color:#38bdf8;
+    text-shadow:0 0 12px rgba(56,189,248,0.6);
 }
 
 /* FOOTER */
