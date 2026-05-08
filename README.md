@@ -97,7 +97,7 @@ This project is available under the MIT License.
 
 ## Author
 
-[Your Name/Aleguiojo777](https://github.com/Aleguiojo777)
+[Aljey Aleguiojo/Aleguiojo777](https://github.com/Aleguiojo777)
 
 ## Contributing
 
